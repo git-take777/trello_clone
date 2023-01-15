@@ -5,12 +5,16 @@ const TaskAddInput = ({inputText,setInputText, taskList, setTaskList}) => {
     e.preventDefault();
     // console.log(e);
     // Enter押される→カードが追加されたとき
-    setTaskList([
-    ...taskList,
-      { 
-        text : inputText,
-      }
-    ]);
+    if(inputText) {
+
+      setTaskList([
+        ...taskList,
+        { 
+          id: taskList.Length,
+          text : inputText,
+        }
+      ]);
+    }
     setInputText("");
   }
   const handleChange = (e) => {

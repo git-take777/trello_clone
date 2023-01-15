@@ -11,8 +11,11 @@
 
 .taskText {
   margin-left: 12px;
+  color: blue;
 }
 
 .taskTrashButton {
+  cursor: pointer;
   margin-right: 9px;
+  border: none;
 }
